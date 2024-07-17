@@ -197,5 +197,24 @@ document.addEventListener('keydown', function(event) {
     
     showSlides3(slideIndex3);
     
-    
+
+    function alterarIcone() {
+        const iframe = document.getElementById('mini-agenda');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+  
+        const icones = iframeDocument.getElementsByClassName('st-bg');
+        if (icones.length > 0) {
+          for (let i = 0; i < icones.length; i++) {
+            icones[i].style.backgroundColor = 'red'; // Notação camelCase
+          }
+        } else {
+          console.log('Ícone não encontrado no iframe.');
+        }
+      }
+
+      setInterval(function() {
+        alterarIcone()
+    }, 5000); 
+
+
 });

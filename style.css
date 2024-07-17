@@ -20,6 +20,29 @@
     --fonte-lato: 'Lato' !important;
     --fonte-mont: 'Montserrat' !important;
     --overlay: rgba(7, 7, 7, 0.36);
+
+
+
+
+
+    --dark-body: #4d4c5a;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue: #0000ff;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
 }
 
 
@@ -495,7 +518,7 @@ section.servicos .box-itens img {
 }
 
 section.servicos .box-itens h3 {
-    color: var(--bege);
+    color: var(--branco);
 }
 
 /*  ESTILO ESTRUTURA*/
@@ -561,12 +584,12 @@ section.estrutura .estrutura-item p {
     text-align: left;
 }
 
-section.estrutura .cta {
+.cta {
     text-align: center;
     margin-top: 40px;
 }
 
-section.estrutura .btn-solicitar-orcamento {
+.btn-solicitar-orcamento {
     display: inline-block;
     background-color: var(--marrom-forte);
     color: #fff;
@@ -577,7 +600,7 @@ section.estrutura .btn-solicitar-orcamento {
     transition: 0.3s ease;
 }
 
-section.estrutura .btn-solicitar-orcamento:hover {
+.btn-solicitar-orcamento:hover {
     background-color: var(--azul-forte);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
@@ -586,7 +609,7 @@ section.estrutura .btn-solicitar-orcamento:hover {
 
 /* ESTILO GALERIA  */
 section.galeria {
-    height: calc(100vh + 100px);
+    height: calc(100vh + 150px);
     padding: 50px 4%;
     /* background-color: var(--azul-forte); */
     background: var(--fundo-servicos);
@@ -604,7 +627,7 @@ section.galeria .interface h2 {
 }
 
 section.galeria .interface h2::after {
-    background-color: var(--marrom-fraco);
+    background-color: var(--bege);
     margin-left: 558px;
 }
 
@@ -637,8 +660,7 @@ section.galeria .titulo-galerias img {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 20px;
 
 }
 
@@ -747,7 +769,7 @@ section.galeria .gallery-item img:hover {
 }
 
 .dot.active {
-    background-color: var(--marrom-fraco);
+    background-color: var(--bege);
 }
 
 
@@ -878,15 +900,67 @@ body.modal-open {
 
 
 
+/* ESTILO AGENDA */
 
-/* ESTILO ESTRUTURA */
 
-/* 
-
-section.estrutura {
+section.agenda{
     height: 100vh;
-    background-color: var(--marrom-forte);
-    box-shadow: 0 0 8px #0000009c;
+    background-color: #FFf;
+    padding: 40px 4%;
 }
 
- */
+section.agenda .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.agenda .calendar{
+
+    width: 600px;
+    max-height: 800px;
+margin-top: 20px;
+}
+
+section.agenda  h2::after {
+margin-left: 555px;
+}
+
+
+section.agenda  p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+}
+
+section.agenda .descricao-agenda{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section.agenda .descricao-agenda .container-cor{
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  margin-left: 25px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+section.agenda .descricao-agenda p {
+    text-align: center;
+margin-top: 0;
+  }
+  
+
+section.agenda .descricao-agenda .container-cor.branco{
+background-color: #fff;
+  }
+  section.agenda .descricao-agenda .container-cor.azul{
+    background-color: var(--azul-forte);
+      }
