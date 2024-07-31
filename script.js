@@ -32,10 +32,11 @@ scrollTopBtn.addEventListener('click', function() {
         fundohome.classList.add(backgrounds[index % backgrounds.length]);
     }, 5000); 
 
+    const whatsapp =document.getElementById('whatsappButton');
     setTimeout(() => {
-        document.getElementById('whatsappButton').classList.remove('minimized');
+        whatsapp.classList.remove('minimized');
         setTimeout(() => {
-            document.getElementById('whatsappButton').classList.add('minimized');
+            whatsapp.classList.add('minimized');
         }, 5000);
     }, 2000);
 
@@ -196,25 +197,149 @@ document.addEventListener('keydown', function(event) {
     }
     
     showSlides3(slideIndex3);
+
+
     
+    let slideIndex4 = 0;
+    const dots4 = document.querySelectorAll('.dot4');
 
-    function alterarIcone() {
-        const iframe = document.getElementById('mini-agenda');
-        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-  
-        const icones = iframeDocument.getElementsByClassName('st-bg');
-        if (icones.length > 0) {
-          for (let i = 0; i < icones.length; i++) {
-            icones[i].style.backgroundColor = 'red'; // Notação camelCase
-          }
+    function showSlides4(n) {
+        if (n >= dots4.length) {
+            slideIndex4 = 0;
+        } else if (n < 0) {
+            slideIndex4 = dots4.length - 1;
         } else {
-          console.log('Ícone não encontrado no iframe.');
+            slideIndex4 = n;
         }
-      }
 
-      setInterval(function() {
-        alterarIcone()
-    }, 5000); 
+        const offset = -slideIndex4 * 280 - (slideIndex4 * (window.innerWidth * 0.015));
+        document.querySelector('.testemunhos-wrap').style.transform = `translateX(${offset}px)`;
+
+        dots4.forEach(dot => dot.classList.remove('active'));
+        dots4[slideIndex4].classList.add('active');
+    }
+
+    window.changeSlide4 = function(n) {
+        showSlides4(slideIndex4 + n);
+    }
+
+    window.currentSlide4 = function(n) {
+        showSlides4(n);
+    }
+
+    showSlides4(slideIndex4);
+    let slideInterval1 = null;
+    let slideInterval2 = null;
+    let slideInterval4 = null;
+
+    function startSlideShow1() {
+        if (slideInterval1 === null) {
+            slideInterval1 = setInterval(() => {
+                changeSlide1(1);
+                changeSlide3(1);
+                console.log('Iniciando o slideshow');
+            }, 5000);
+         
+        }
+    }
+
+    function stopSlideShow1() {
+        if (slideInterval1 !== null) {
+            clearInterval(slideInterval1);
+            clearInterval(slideInterval2);
+            slideInterval1 = null;
+            slideInterval2 = null;
+            console.log('Parando o slideshow');
+        }
+    }
+
+    var observerSlide1 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                startSlideShow1();
+            } else {
+                stopSlideShow1();
+            }
+        });
+    });
+    dots.forEach((element) => {
+        observerSlide1.observe(element);
+    });
+
+
+    function startSlideShow4() {
+        if (slideInterval4 === null) {
+            slideInterval4 = setInterval(() => {
+                changeSlide4(1);
+                console.log('Iniciando o slideshow');
+            }, 5000);
+         
+        }
+    }
+
+    function stopSlideShow4() {
+        if (slideInterval4 !== null) {
+            clearInterval(slideInterval4);
+            slideInterval4 = null;
+            console.log('Parando o slideshow');
+        }
+    }
+
+    var observerSlide4 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                startSlideShow4();
+            } else {
+                stopSlideShow4();
+            }
+        });
+    });
+    dots4.forEach((element) => {
+        observerSlide4.observe(element);
+    });
+
+
+
+
+
+
+    var Observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.remove('desaparecer');
+          } else {
+            entry.target.classList.remove('show');
+            entry.target.classList.add('desaparecer');
+          }
+        });
+      });
+    
+      var hiddenElements = document.querySelectorAll('.hidden');
+    
+      hiddenElements.forEach((element) => {
+        Observer.observe(element);
+      });
+
+
+       
+      var Observer2 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('aparecer');
+            entry.target.classList.remove('desaparecer');
+          } else {
+            entry.target.classList.remove('aparecer');
+            entry.target.classList.add('desaparecer');
+          }
+        });
+      });
+
+      var hiddenElements2 = document.querySelectorAll('.aparecer');
+    
+      hiddenElements2.forEach((element) => {
+        Observer2.observe(element);
+      });
 
 
 });

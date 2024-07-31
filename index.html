@@ -23,50 +23,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
     <link rel="icon" href="assent/logocomfundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
 </head>
 
 <body>
-    <section class="home bg1" id="home">
-        <div class="overlayhome"></div>
-        <header>
+
+
+    <section class="home bg1" id="home" >
+        <header class="desaparecer aparecer">
             <div class="interface">
                 <div class="logo">
-                    <a href="#home">
-                        <img src="assent/logo.png" alt="">
-                    </a>
+                    <img src="assent/logo2.png" alt="">
                 </div><!--logo-->
 
                 <nav class="menu-desktop">
-
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
                         <li><a href="#estrutura">Estrutura</a></li>
                         <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#agenda">Agendas</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
                         <li><a href="#localizacao">Localização</a></li>
-                    </ul>
-                </nav><!--menu-desktop"-->
 
-                <!-- <div class="btn-contato">
-                <a href="#contato">
-                    <button>Contato</button>
-                </a>
-            </div>btn-contato -->
+                    </ul>
+                </nav>
+
+                <!-- <div class="redes">
+                    <div class="botaorede">
+                        <button><a 
+                             target="_blank" href="https://www.instagram.com/casariocerimonial/"><img src="assent/instagram.svg" alt="Instagram"></a></button>
+                    </div>
+                </div> -->
+
             </div> <!-- interface-->
         </header>
-        <div class="interface">
+        <div class="overlayhome"></div>
+        <div class="interface" >
             <div class="flex">
 
-                <h1>
+                <h1 class="desaparecer aparecer">
                     Cerimonial
                     <span>CASA RIO</span>
                 </h1>
-                <p>Onde seus sonhos tornam-se inesquecíveis</p>
-                <div class="btn-principal">
-                    <a href="">
+                <p class="desaparecer aparecer">Onde seus sonhos tornam-se inesquecíveis</p>
+                <div class="btn-principal desaparecer aparecer">
+                    <a href="#contato">
                         <button>Entre em contato</button>
                     </a>
                 </div>
@@ -77,11 +83,10 @@
     </section> <!--home-->
 
 
-
     <section class="sobre" id="sobre">
         <div class="interface">
             <div class="flex">
-                <div class="boxsobre">
+                <div class="boxsobre desaparecer hidden" >
                     <h2>SOBRE NÓS</h2>
 
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, sapiente quidem nemo ex
@@ -98,11 +103,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="img-sobre">
+                <div class="img-sobre desaparecer  aparecer">
                     <img src="assent/sobrenos.jpg" alt="">
-                    <!-- <div class="img2-sobre">
-                        <img src="assent/homefundo-rio.jpg" alt="">
-                    </div> -->
                 </div>
 
             </div>
@@ -112,19 +114,19 @@
     <section class="servicos">
         <div class="interface">
             <div class="flex">
-                <div class="box-itens">
+                <div class="box-itens desaparecer aparecer">
                     <img src="assent/casal.svg" alt="">
                     <h3>Celebre sua festa</h3>
                 </div>
-                <div class="box-itens">
+                <div class="box-itens desaparecer aparecer">
                     <img src="assent/evento.svg" alt="">
                     <h3>+ de 1500 eventos</h3>
                 </div>
-                <div class="box-itens">
+                <div class="box-itens desaparecer aparecer">
                     <img src="assent/local.svg" alt="">
                     <h3>Localização privilegiada</h3>
                 </div>
-                <div class="box-itens">
+                <div class="box-itens desaparecer aparecer">
                     <img src="assent/rio.svg" alt="">
                     <h3>Vista deslumbrante do rio</h3>
                 </div>
@@ -133,14 +135,14 @@
     </section>
     <section class="estrutura" id="estrutura">
         <div class="interface">
-            <h2>NOSSA ESTRUTURA</h2>
-            <p class="section-description">
+            <h2 class="desaparecer aparecer">NOSSA ESTRUTURA</h2>
+            <p class="section-description aparecer">
                 Com Espaço de 800m² e uma capacidade total para 500 convidados, a Casa rio oferece:
             </p>
             <div class="estrutura-grid">
 
 
-                <div class="estrutura-item">
+                <div class="estrutura-item desaparecer hidden">
                     <img src="assent/casa2.svg" alt="Mobiliário">
                     <h3>Espaço</h3>
                     <p>
@@ -153,7 +155,7 @@
 
                     </p>
                 </div>
-                <div class="estrutura-item">
+                <div class="estrutura-item desaparecer hidden">
                     <img src="assent/bufe.svg" alt="Mobiliário">
                     <h3>Mobiliário</h3>
                     <p>
@@ -164,7 +166,7 @@
                         • 1 aparador <br>
                     </p>
                 </div>
-                <div class="estrutura-item">
+                <div class="estrutura-item desaparecer hidden">
                     <img src="assent/provador.svg" alt="Banheiros">
                     <h3>Camarins</h3>
                     <p> Camarim da noiva: <br>
@@ -177,7 +179,7 @@
                         • Vista privilegiada do rio <br> <br>
                     </p>
                 </div>
-                <div class="estrutura-item">
+                <div class="estrutura-item desaparecer hidden">
                     <img src="assent/cozinha.svg" alt="Cozinha">
                     <h3>Cozinha</h3>
                     <p>
@@ -190,7 +192,7 @@
                 </div>
 
             </div>
-            <div class="cta">
+            <div class="cta aparecer">
                 <a href="#orcamento" class="btn-solicitar-orcamento">Solicitar Orçamento</a>
             </div>
         </div>
@@ -199,13 +201,13 @@
 
     <section class="galeria" id="galeria">
         <div class="interface">
-            <h2>GALERIA</h2>
+            <h2 class="desaparecer  aparecer">GALERIA</h2>
             <div class="flex">
                 <div class="titulo-galerias">
-                    <img src="assent/plantar.svg" alt="">
-                    <h3>Área verde</h3>
+                    <img src="assent/plantar.svg" alt="" class="desaparecer  aparecer">
+                    <h3 class="desaparecer  aparecer">Área verde</h3>
                 </div>
-                <div class="container-gallery">
+                <div class="container-gallery desaparecer  hidden">
                     <button class="prev" onclick="changeSlide1(-1)">&#10094;</button>
                     <div class="gallery-container">
                         <div class="gallery galeria1">
@@ -242,7 +244,7 @@
                     </div>
                     <button class="next" onclick="changeSlide1(1)">&#10095;</button>
                 </div>
-                <div class="dots">
+                <div class="dots desaparecer  hidden">
                     <span class="dot dot1" onclick="currentSlide1(0)"></span>
                     <span class="dot dot1" onclick="currentSlide1(1)"></span>
                     <span class="dot dot1" onclick="currentSlide1(2)"></span>
@@ -250,10 +252,10 @@
                 </div>
 
                 <div class="titulo-galerias">
-                    <img src="assent/cerimonia.svg " alt="">
-                    <h3>Cerimonias</h3>
+                    <img src="assent/cerimonia.svg " alt="" class="desaparecer  aparecer">
+                    <h3 class="desaparecer  aparecer">Cerimonias</h3>
                 </div>
-                <div class="container-gallery">
+                <div class="container-gallery desaparecer  hidden">
                     <button class="prev" onclick="changeSlide3(-1)">&#10094;</button>
                     <div class="gallery-container">
                         <div class="gallery galeria3">
@@ -295,14 +297,14 @@
                             </div>
                         </div>
                         <div class="gallery-item gallery3">
-                            <img src="assent/cerimonia8.jpg" alt="Imagem 4" onclick="openModal(this)">
+                            <img src="assent/cerimonia8.jpeg" alt="Imagem 4" onclick="openModal(this)">
                             <div class="overlay-foto"></div>
                         </div>
 
                     </div>
                     <button class="next" onclick="changeSlide3(1)">&#10095;</button>
                 </div>
-                <div class="dots">
+                <div class="dots desaparecer  hidden">
                     <span class="dot dot3" onclick="currentSlide3(0)"></span>
                     <span class="dot dot3" onclick="currentSlide3(1)"></span>
                     <span class="dot dot3" onclick="currentSlide3(2)"></span>
@@ -317,33 +319,254 @@
 
     <section class="agenda" id="agenda">
         <div class="interface">
-            <h2>AGENDA</h2>
+            <h2 class="desaparecer  aparecer">AGENDA</h2>
             <div class="flex">
-                <p class="section-description">
+                <p class="section-description desaparecer  aparecer">
                     Nossas datas disponíveis
                 </p>
-                <div class="calendar">
+                <div class="calendar desaparecer  aparecer">
                     <div data-tockify-component="calendar" data-tockify-calendar="lipejso2" class="mini-agenda"></div>
                     <script data-cfasync="false" data-tockify-script="embed"
                         src="https://public.tockify.com/browser/embed.js"></script>
 
                 </div>
 
-                <div class="descricao-agenda">
+                <div class="descricao-agenda desaparecer  aparecer">
                     <div class="container-cor branco"></div>
                     <p class="text-agenda">Disponível</p>
                     <div class="container-cor azul"></div>
                     <p class="text-agenda ">Indisponível</p>
                 </div>
-                <div class="cta">
+                <div class="cta desaparecer  hidden">
                     <a href="#orcamento" class="btn-solicitar-orcamento">Reservar data</a>
                 </div>
             </div>
     </section>
 
 
+    <section class="testemunhos" id="testemunhos">
+        <div class="interface">
+            <div class="titulo desaparecer aparecer">
+                <h2>SONHOS REALIZADOS</h2>
+            </div>
+
+            <div class="flex">
+                <div class="flex-botao desaparecer hidden">
+                    <button class="prev" onclick="changeSlide4(-1)">&#10094;</button>
+
+                    <div class="testemunhos-container">
+                        <div class="testemunhos-wrap">
+                            <div class="testemunho">
+                                <p>O Casa Rio ofereceu tudo o que precisávamos para nosso grande dia, desde o espaço amplo até a cozinha industrial, que atendeu perfeitamente nosso buffet.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium explicabo,
+                                    consectetur molestiae autem mollitia magnam illo cupiditate reprehenderit distinctio
+                                    eum, eos numquam omnis nisi quis, natus veniam nostrum ipsum doloremque.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia2.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam porro modi
+                                    iure,
+                                    obcaecati quam nemo aspernatur quae, asperiores illo facilis numquam similique
+                                    minima
+                                    ipsum inventore aperiam, repudiandae id eos!.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam porro modi
+                                    iure,
+                                    obcaecati quam nemo aspernatur quae, asperiores illo facilis numquam similique
+                                    minima
+                                    ipsum inventore aperiam, repudiandae id eos!.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam porro modi
+                                    iure,
+                                    obcaecati quam nemo aspernatur quae, asperiores illo facilis numquam similique
+                                    minima
+                                    ipsum inventore aperiam, repudiandae id eos!.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam porro modi
+                                    iure,
+                                    obcaecati quam nemo aspernatur quae, asperiores illo facilis numquam similique
+                                    minima
+                                    ipsum inventore aperiam, repudiandae id eos!.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                            <div class="testemunho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam porro modi
+                                    iure,
+                                    obcaecati quam nemo aspernatur quae, asperiores illo facilis numquam similique
+                                    minima
+                                    ipsum inventore aperiam, repudiandae id eos!.</p>
+                                <div class="autor">
+                                    <img src="assent/cerimonia4.jpg" alt="Foto de Ana & Felipe">
+                                    <p>Ana & Felipe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="next" onclick="changeSlide4(1)">&#10095;</button>
+                </div>
+
+            </div>
+            <div class="dots">
+                <span class="dot dot4" onclick="currentSlide4(0)"></span>
+                <span class="dot dot4" onclick="currentSlide4(1)"></span>
+                <span class="dot dot4" onclick="currentSlide4(2)"></span>
+                <span class="dot dot4" onclick="currentSlide4(3)"></span>
+            </div>
+        </div>
+        </div>
+    </section>
 
 
+
+    <section class="localizacao" id="localizacao">
+        <div class="interface">
+            <h2 class="desaparecer aparecer">Nossa Localização</h2>
+            <div class="flex">
+                <div class="map desaparecer aparecer"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6930.354873584087!2d-38.278562390789816!3d-12.873585693807613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163fac106aa2a5%3A0xa8dcf8ac03312035!2sCerimonial%20casa%20rio!5e0!3m2!1spt-BR!2sbr!4v1721705267043!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="endereco desaparecer hidden">
+                    <h3>Endereço</h3>
+                    <p>R. João Marques Oliveira, 53 - Buraquinho, Lauro de Freitas - BA, 42710-170</p>
+                    <h3>Como Chegar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio aspernatur ducimus, magni
+                        provident necessitatibus aut totam. Esse mollitia fugit inventore, necessitatibus, maxime id
+                        labore, accusamus placeat corrupti nisi eius.</p>
+                    <div class="botaomaps">
+                        <button class="botaomap">
+                            <a target="_blank"
+                                href="https://www.waze.com/pt-BR/live-map/directions/br/ba/cerimonial-casa-rio?utm_source=waze_website&utm_campaign=waze_website&utm_medium=website_menu&to=place.ChIJpaJqEKw_FgcRNSAxA6z43Kg">
+                                <img src="assent/waze.svg" alt="Waze"></a>
+                        </button>
+                        <button class="botaomap">
+                            <a target="_blank"
+                                href="https://www.google.com/maps/place/Cerimonial+casa+rio/@-12.8735857,-38.2785624,16z/data=!4m6!3m5!1s0x7163fac106aa2a5:0xa8dcf8ac03312035!8m2!3d-12.8739049!4d-38.277998!16s%2Fg%2F11l5fgl1dt?entry=ttu">
+                                <img src="assent/mapas-do-google.svg" alt="Waze"></a>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="interface">
+            <h2 class="desaparecer aparecer">Informações de Contato</h2>
+            <div class="flex desaparecer aparecer">
+                <div class="informacoes-contato">
+
+                    <p><i class="bi bi-whatsapp"></i> WhatsApp: +55 (71) 99999-9999</p>
+                    <p><i class="bi bi-telephone"></i> Telefone: +55 (71) 99999-9999</p>
+                    <p><i class="bi bi-envelope"></i> E-mail: eventos@casario.com</p>
+                    <a href="https://wa.me/5571" class="botao-whatsapp" target="_blank">
+                        <button type="button">Chamar no Whats!</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer_content" >
+            <div id="footer_contacts" class="desaparecer hidden">
+                <div class="logo"><img src="assent/logo.png" alt="LOGO"></div>
+
+                <p>Realizando seus sonhos</p>
+            </div>
+
+            <ul class="footer-list desaparecer hidden">
+                <li>
+                    <h3>Links úteis</h3>
+                </li>
+                <li>
+                    <a href="#home" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="footer-link">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#estrutura" class="footer-link">Estrutura</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list  desaparecer hidden">
+                <li>
+                    <a href="#galeria" class="footer-link">Galeria</a>
+                </li>
+                <li>
+                    <a href="#agenda" class="footer-link">Agenda</a>
+                </li>
+                <li>
+                    <a href="#localizacao" class="footer-link">Localização</a>
+                </li>
+                <li>
+                    <a href="#testemunhos" class="footer-link">Testemunhos</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe" class=" desaparecer hidden">
+                <h3>Rede social</h3>
+
+                <div id="footer_social_media">
+                    <div class="container-media">
+                        <a target="_blank" href="https://www.instagram.com/casariocerimonial/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/casariocerimonial/" ><p>Acesse o instagram</p></a>
+                    </div>
+                    <div class="container-media">
+                        <a target="_blank" href="https://wa.me/5571987215285?text=Ol%C3%A1%2C%20vim%20do%20site!%20Quero%20realizar%20um%20or%C3%A7amento." class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a target="_blank" href="https://wa.me/5571987215285?text=Ol%C3%A1%2C%20vim%20do%20site!%20Quero%20realizar%20um%20or%C3%A7amento."><p>Entre em contato</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="footer_copyright">
+            <div class=" desaparecer aparecer">
+                &copy;
+                2024 Cerimonial Casa Rio | Todos os direitos reservados.
+            </div>
+        </div>
+        <div id="footer-desenvolvedor">
+            <a target="_blank"  class=" desaparecer aparecer"href="https://felipedeveloper.com/">Desenvolvido por Felipe Oliveira</Desenvolvido></a>
+        </div>
+    </footer>
 
 
     <div id="myModal" class="modal">
@@ -357,6 +580,9 @@
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+
+
+
 
 
     <a href="https://wa.me/5571987215285?text=Ol%C3%A1%2C%20vim%20do%20site!%20Quero%20realizar%20um%20or%C3%A7amento."
